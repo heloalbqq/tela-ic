@@ -5,55 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
         <div class="top-bar">
-            <span><i class="fas fa-home"></i> Viscell</span>
-            <span><i class="fas fa-bars"></i> Cadastros</span>
-            <span><i class="fas fa-money-bill"></i> Pagamentos</span>
-            <span><i class="fas fa-chart-line"></i> Top10</span>
-            <span><i class="fas fa-praying-hands"></i> Ped. Oração</span>
+            <div class="botao"><button><span> Viscel</span></button></div>
+            <div class="botao" onclick="clicar()"><button><span><i class="fas fa-home"></i></span></button></div>
+            <div class="botao">
+                    <select name="cad" id="cad">
+                        <option value="botao">Cadastros</option>
+                    </select>
+            </div>
+            <div class="botao">
+                    <select name="pay" id="pay">
+                        <option value="botao">Pagamentos</option>
+                    </select>
+            </div>
+            <div class="botao" onclick="clicar()"><button><span><i class="fas fa-chart-line"></i> Top10</span></button></div>
+            <div class="botao" onclick="clicar()"><button><span><i class="fas fa-praying-hands"></i> Ped. Oração</span></button></div>
+            <div class="duv" onclick="clicar()"><span><i class="fas fa-question-circle"></i></span></div>
+            <div class="menu1">
+                <img src="img/foto.png" alt="imagem">
+                <div class="opc">
+                    <select name="menu" id="opc"></select>
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <div class="celulas">
-                <i class="fas fa-users"></i>
-                Células
-            </div>
-            <div class="ped-cre">
-                <i class="fas fa-hand-holding-heart"></i>
-                Ped. Criação
-            </div>
-            <div class="meus-dados">
-                <i class="fas fa-id-card"></i>
-                Meus dados
-            </div>
-            <div class="usuarios">
-                <i class="fas fa-user-friends"></i>
-                Usuários
-            </div>
-            <div class="config">
-                <i class="fas fa-cog"></i>
-                Config
-            </div>
-            <div class="agenda">
-                <i class="fas fa-calendar-alt"></i>
-                Agenda
-            </div>
+
+       
+       
         </div>
-        <div id="church">Minha Igreja - LEQ - leqCastanhal Sede</div>
+        <div id="church"><i class="fas fa-plus cross-icon"></i>Minha Igreja - LEQ - leqCastanhal Sede</div>
         <hr>
         <div class="menu">
             <div class="menu1">
-                <button id="red">Células</button>
-                <button id="orange"> Oração </button>
-                <button id="blue">Oração</button>
+                <button id="red" onclick="clicar()"><i class="fas fa-columns"></i>Células</button>
+                <button id="orange" onclick="clicar()"><i class="fas fa-circle circle-icon"></i>Ped. Oração </button>
+                <button id="blue" onclick="clicar()"><i class="fas fa-user user-icon"></i>Meus dados</button>
             </div>
             <div class="menu2">
-                <button id="green">Usuários</button>
-                <button id="lightblue">Config</button>
-                <button id="white">Agenda</button>
+                <button id="green" onclick="clicar()"><i class="fas fa-user user-icon"></i>Usuários</button>
+                <button id="lightblue" onclick="clicar()"><i class="fas fa-wrench config-icon"></i>Config</button>
+                <button id="white" onclick="clicar()"><i class="fas fa-calendar-alt agenda-icon"></i>Agenda</button>
             </div>
             
         </div>
