@@ -118,6 +118,7 @@ select {
     height: 50px;
     border: none;
     cursor: pointer;
+    color: #fff;
 }
 #red{
     background-color: red;
